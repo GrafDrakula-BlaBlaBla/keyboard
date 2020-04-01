@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
 }
-
+/* 
 ul {
     list-style: none;
-}
+} */
 
 
 
@@ -24,26 +24,28 @@ ul {
     }
 
     .keyboard {
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-direction: column; */
         max-width: 80%;
         margin: 0 auto;
         background: grey;
+        border: 1px solid rosybrown;
     }
 
-        .keyboard .row {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-            background: yellowgreen;
-        }
+      
 
-            .row li {
-                display: block;
+            .keyboard .key {
+                /* display: block; */
+                margin: 10px 20px;
                 text-align: center;
-                width: 30px;
-                height: 30px;
+                width: 66px;
+                height: 60px;
                 border: 1px solid black;
+                border-radius: 5px;
+                box-sizing: border-box;
+                background: rgb(211, 209, 209);
+                line-height: 60px;
             }
 
             .row .sizeBtn1 {
