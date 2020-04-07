@@ -157,15 +157,18 @@ document.addEventListener(`keydown`, (event) => {
         let body = document.querySelector(`body`);
         let wrapper = document.createElement(`div`);
         let textArea = document.createElement(`textarea`);
+        let messege = document.createElement(`p`);
         let keyboard = document.createElement(`div`);
-
+        
         wrapper.classList.add(`wrapper`);
         textArea.classList.add(`textarea`);
         textArea.setAttribute(`autofocus`, `autofocus`);
+        messege.innerHTML = `language change Alt + Shift`;
         keyboard.classList.add(`keyboard`);
 
         body.append(wrapper);
         body.append(textArea);
+        body.append(messege);
         body.append(keyboard);
     }
 
