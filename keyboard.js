@@ -142,7 +142,7 @@ window.addEventListener('load', () => {
     body.append(keyboard);
   }
 
-  function buildKeys(skeys, skeysRu) {
+  function buildKeys(skeys) {
     const keyboard = document.querySelector('.keyboard');
     const arrKey = Object.keys(skeys);
     arrKey.forEach((k) => {
@@ -187,8 +187,6 @@ window.addEventListener('load', () => {
           break;
       }
     });
-
-    // intype(skeys, skeysRu);
   }
 
   function intype(skeys, skeysRu) {
@@ -204,7 +202,6 @@ window.addEventListener('load', () => {
         key.textContent = `${Object.values(keyLayout)[i]}`;
       }
     }
-    // highlight();
   }
 
   function highlight() {
