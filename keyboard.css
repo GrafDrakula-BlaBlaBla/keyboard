@@ -2,81 +2,101 @@
     padding: 0;
     margin: 0;
 }
+
 /* 
 ul {
     list-style: none;
 } */
 
-
+.uppercase {
+    text-transform: uppercase;
+}
 
 .wrapper {
-   max-width: 960px;
+   width: 982px;
    margin: 0 auto;
    padding: 0 5px; 
 }
 
     .textarea {
         display: block;
-        min-width: 60%;
+        width: 600px;
         height: 200px;
         margin: 30px auto;
-        
     }
 
     .keyboard {
         display: flex;
         flex-wrap: wrap;
-        /*flex-direction: column; */
-        max-width: 80%;
+        justify-content: space-evenly;
+        width: 982px;
+        height: 350px;
+        flex-shrink: 0;
         margin: 0 auto;
-        background: grey;
-        border: 1px solid rosybrown;
+        /* background: yellowgreen; */
+        /* border: 1px solid rosybrown; */
     }
-
-      
-
             .keyboard .key {
                 /* display: block; */
-                margin: 10px 20px;
+                margin: 10px 10px;
                 text-align: center;
-                width: 66px;
-                height: 60px;
-                border: 1px solid black;
-                border-radius: 5px;
+                width: 48px;
+                height: 48px;
+                color: white;
+                /* border: 1px solid black; */
+                border-radius: 10px;
                 box-sizing: border-box;
-                background: rgb(211, 209, 209);
-                line-height: 60px;
+                background: rgb(112, 114, 118);
+                line-height: 48px;
+                box-shadow: 5px 5px 5px grey;
+                transition: .1s;
             }
 
-            .row .sizeBtn1 {
-                display: block;
-                text-align: center;
-                width: 60px;
-                height: 30px;
-                border: 1px solid black;
+            .keyboard .active {
+                transform: translateY(3px);
+                background: orange;
+                box-shadow: none;
+                /* transition: .2s; */
             }
 
-            .row .sizeBtn2 {
-                display: block;
-                text-align: center;
-                width: 70px;
-                height: 30px;
-                border: 1px solid black;
+            .keyboard .delete {
+                width: 72px;
+                height: 48px;
             }
 
-            .row .sizeBtn3 {
-                display: block;
-                text-align: center;
-                width: 90px;
-                height: 30px;
-                border: 1px solid black;
+            .keyboard .tab {
+                width: 72px;
+                height: 48px;
             }
 
-            .row .spaceBtn {
-                display: block;
-                text-align: center;
-                width: 330px;
-                height: 30px;
-                border: 1px solid black;
+            .keyboard .capsenter {
+                width: 96px;
+                height: 48px;
             }
+
+            .keyboard .shift {
+                width: 120px;
+                height: 48px;
+            }
+
+            .keyboard .ctrl {
+                width: 40px;
+                height: 48px;
+            }
+
+            .keyboard .alt {
+                width: 40px;
+                height: 48px;
+            }
+
+            .keyboard .command {
+                width: 58px;
+                height: 48px;
+            }
+
+            .keyboard .span {
+                width: 605px;
+                height: 48px;
+            }
+
 
