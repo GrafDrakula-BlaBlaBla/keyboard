@@ -1,1 +1,1 @@
- https://grafdrakula-blablabla.github.io/keyboard/
+ https://grafdrakula-blablabla.github.io/keyboard/keyboard.html
