@@ -122,16 +122,10 @@ const skeysRu = {
     AltRight: "Alt"
 }
 
-// window.addEventListener(`keydown`, (event) => {
-//     console.log(event.key);
-// })
-
 window.addEventListener(`load`, () => {
     wrapper();
     buildKeys(skeys, skeysRu);
-    print(skeys, skeysRu);
 });
-
 
 document.addEventListener(`keydown`, (event) => {
 
@@ -304,8 +298,3 @@ document.addEventListener(`keydown`, (event) => {
             elem.textContent = text;
         })
     }
-
-    
-    
-
-    // тогда вместо eslint:recommended вставьте eslint-config-airbnb-base
